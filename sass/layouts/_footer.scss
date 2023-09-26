@@ -1,0 +1,26 @@
+.footer {
+  border-top: 1rem solid $color-gray-dark-4;
+  padding: 5rem;
+  background-color: $color-black;
+  font-size: $default-font-size;
+  font-family: $default-font-family;
+  list-style: none;
+  color: $color-gray-dark-4;
+
+  &__questions {
+    color: $color-gray-dark-4;
+  }
+
+  .row {
+    div {
+      li {
+        &:not(:last-child) {
+          margin-bottom: .75rem;
+        }
+        a {
+          color: $color-gray-dark-4;
+        }
+      }
+    }
+  }
+}

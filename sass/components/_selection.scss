@@ -1,0 +1,39 @@
+.select-container {
+  position: relative;
+  font-family: $default-font-family;
+
+  &__select {
+    background-color: transparent;
+    border: 1px solid $color-gray-dark-4;
+    padding: .65rem 1rem;
+    padding-left: 3.5rem;
+    padding-right: 2.5rem;
+    appearance: none;
+    border-radius: 3px;
+    color: $color-gray-dark-3;
+    font-family: $default-font-family, sans-serif;
+    font-size: $default-font-size;
+
+    &:focus{
+      outline-color: white;
+      outline-offset: 2px;
+    }
+  }
+
+  &--translate-img {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 1.5rem;
+    filter: invert(95%) sepia(1%) saturate(61%) hue-rotate(314deg)
+      brightness(71%) contrast(90%);
+  }
+  &--down {
+    position: absolute;
+    width: 0.85rem;
+    right: 7%;
+    top: 25%;
+    filter: invert(95%) sepia(1%) saturate(61%) hue-rotate(314deg)
+      brightness(71%) contrast(90%);
+  }
+}

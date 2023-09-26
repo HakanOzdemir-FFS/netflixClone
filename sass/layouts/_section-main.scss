@@ -1,0 +1,80 @@
+.section-main {
+
+  &--img {
+    background-image: url("../../img/nf-main.jpeg");
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+
+  &__description {
+    @include absoulteCenter;
+    color: $color-white;
+    text-align: center;
+    top: 40rem;
+    font-family: $default-font-family;
+    flex-wrap: nowrap;
+    width: 100%;
+
+
+    h1 {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      
+    }
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    &__input-box {
+
+      display: inline-flex;
+      position: relative;
+      
+
+      &--input {
+        width: 30rem;
+        padding: 2rem 2.5rem;
+        padding-bottom: 1rem;
+        background-color: rgba($color-black, 0.5);
+        border: 1px solid $color-gray-dark-2;
+        border-radius: 3px;
+        color: $color-white;
+        margin-right: 1rem;
+        position: relative;
+
+        &--label {
+          position: absolute;
+          left: 2.5rem;
+          top: 1.5rem;
+          color: $color-gray-dark-2;
+          font-size: $default-font-size;
+          font-family: $default-font-family;
+          transition: all 0.2s;
+          opacity: 1;
+          pointer-events: none;
+        }
+  
+        &:focus {
+          outline-offset: 2px;
+          outline-width: 1px;
+          outline-color: $color-white;
+  
+        }
+  
+        &:invalid ~ &--label{
+          top: .5rem;
+          font-size: 1.2rem;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.section-main {
+  padding: 10rem 0;
+  height: 40rem;
+}
+
+.section-secondary {
+  background-color: $color-black;
+  border-top: 1rem solid $color-gray-dark-4;
+  border-radius: 3px;
+  display: flex;
+  color: $color-white;
+  padding: 7.2rem 0;
+  justify-content: center;
+}
+
+.section-faq {
+  border-top: 1rem solid $color-gray-dark-4;
+  padding: 5rem;
+  background-color: $color-black;
+}

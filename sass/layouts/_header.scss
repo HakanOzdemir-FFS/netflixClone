@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  max-width: calc(66.6666666% - 6rem);
+  margin: 0 auto;
+  // background-image: linear-gradient(to bottom, rgba($color-black, .3), transparent);,
+  z-index: 2;
+
+
+  &__logo-box {
+    padding-left: 2rem;
+    &--img {
+      width: 14.8rem;
+      height: auto;
+    }
+  }
+
+  &__right {
+    padding-right: 2rem;
+    display: flex;
+    
+    a{
+      margin-left: 2rem;
+    }
+  }
+}

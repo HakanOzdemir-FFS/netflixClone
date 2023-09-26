@@ -1,0 +1,50 @@
+@mixin clearfix{
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absoulteCenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == smallPhone {
+    @media (max-width: 41.2em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 60em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 96em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 128em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (max-width: 192em) {
+      @content;
+    }
+  }
+}
+
+/*
+412px
+600px
+960px
+1280px calc(83.33333333333334% - 6rem)
+1920px calc(66.66666666666666% - 6rem)
+*/

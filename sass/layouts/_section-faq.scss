@@ -1,0 +1,73 @@
+.section-faq {
+  font-family: $default-font-family;
+
+  &__bottom {
+    display: flex;
+    color: $color-white;
+    margin-top: 5rem;
+    justify-content: center;
+    font-family: $default-font-family;
+    align-items: center;
+
+    &__head {
+      text-align: center;
+      color: $color-white;
+      font-size: 2rem;
+      margin-top: 5rem;
+    }
+    input {
+      height: 2rem;
+    }
+  }
+
+  &__container {
+    margin: 0 auto;
+    color: $color-white;
+    width: 100%;
+    font-family: $default-font-family;
+    margin-bottom: 1rem;
+    height: auto;
+
+    &__head {
+      border-radius: 3px;
+      padding: 1rem 2rem;
+      font-size: 2rem;
+      display: flex;
+      justify-content: space-between;
+      background-color: $color-gray-dark-4;
+      align-items: center;
+      cursor: pointer;
+      span {
+        font-size: 3rem;
+        transition: all 0.5s;
+
+        &:hover {
+          transform: rotate(45deg);
+        }
+      }
+    }
+    &__answer {
+      border-radius: 3px;
+      padding: 1rem 2rem;
+      font-size: $default-font-size;
+      background-color: $color-gray-dark-3;
+      transform: translateY(-2rem);
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s;
+      z-index: -3;
+    }
+  }
+}
+
+.visible {
+  overflow: auto;
+  opacity: 1; // .visible sınıfı eklendiğinde görünür
+  max-height: 30rem;
+  transform: translateY(0rem);
+}
+
+.rotate45 {
+  transform: rotate(45deg);
+}

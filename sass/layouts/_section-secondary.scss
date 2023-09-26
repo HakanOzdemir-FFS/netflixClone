@@ -1,0 +1,48 @@
+.section-secondary{
+  background-color: $color-black;
+  border-top: 1rem solid $color-gray-dark-4;
+  border-radius: 3px;
+  display: flex;
+  color: $color-white;
+  padding: 7.2rem 0;
+  justify-content: center;
+  font-family: $default-font-family;
+  overflow: hidden;
+  @include respond(phone){
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__description {
+    
+    margin: auto 5rem;
+    padding:  0 5rem;
+
+    @include respond(phone){
+      order: -1;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 2rem;
+    }
+    p{
+      font-size: 3rem;
+
+    }
+  }
+  &__img{
+    width: 90rem;
+    margin: auto 5rem;
+    padding: 0 5rem;
+    @include respond(phone){
+      margin: auto 5rem;
+      padding:  0;
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
